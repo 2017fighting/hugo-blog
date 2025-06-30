@@ -1,0 +1,24 @@
+languageCode: zh-cn
+languageName: 简体中文
+weight: 1
+title: 空雨集
+
+params:
+  displayName: 简体中文
+  isoCode: zh-cn
+  rtl: false
+  dateFormat: 2006-01-02
+  #logo: img/logo.svg
+  # logo: img/logo.png
+  description: 折腾各种开源项目，搭建 homelab，分享那些好用到上头的工具，也偶尔写写折腾背后的思考。
+  author:
+    name: Ryan Valor
+    image: img/avator/ryanvalor.png
+    headline: 写写折腾背后的思考
+    bio: 你生而有翼，为何竟愿一生匍匐前进，形如虫蚁？
+    links:
+      - rss: /index.xml
+      - pgpkey: https://keys.openpgp.org/vks/v1/by-fingerprint/F0FF4ABD022DCB6D302B93EFFD3299FFA87F067B
+      - github: http://github.com/2017fighting
+      - steam: https://steamcommunity.com/id/174335
+      - email: mailto:hello@raenzo.com

@@ -1,0 +1,15 @@
+{
+    "name": "hugo-blog",
+    "compatibility_date": "2025-07-01",
+    "main": "index.js",
+    "assets": {
+        "binding": "ASSETS",
+        "directory": "./public/"
+    },
+    "r2_buckets": [
+        {
+            "binding": "MEDIA",
+            "bucket_name": "blog-image"
+        }
+    ]
+}

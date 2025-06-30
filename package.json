@@ -1,0 +1,25 @@
+{
+  "name": "myBlog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "hugo server -E -F --buildDrafts",
+    "prod": "hugo server -E -F --buildDrafts -e production",
+    "build": "hugo --minify",
+    "build:cf": "npm-run-all build rclone clean:img",
+    "rclone:install": "curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip && unzip rclone-current-linux-amd64.zip",
+    "rclone:config": "mkdir -p ~/.config/rclone && echo $RCLONE_CONFIG_BASE64 | base64 -d > ~/.config/rclone/rclone.conf",
+    "rclone:copy": "rclone-*-linux-amd64/rclone copy public/img r2:blog-image/blog-img",
+    "rclone": "npm-run-all rclone:install rclone:config rclone:copy",
+    "clean:img": "rm -rf public/img",
+    "clean": "rm -rf public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.4",
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
