@@ -1,0 +1,55 @@
+theme: blowfish
+baseURL: http://localhost:1313
+defaultContentLanguage: zh-cn
+
+enableRobotsTXT: true
+summaryLength: 30
+hasCJKLanguage: true
+
+buildDrafts: false
+buildFuture: false
+
+enableEmoji: true
+
+pagination:
+  pagerSize: 100
+
+imaging:
+  anchor: Center
+
+taxonomies:
+  tag: tags
+  category: categories
+  author: authors
+  series: series
+
+sitemap:
+  changefreq: always
+  filename: sitemap.xml
+  priority: 0.5
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+related:
+  threshold: 0
+  toLower: false
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 100
+    - name: authors
+      weight: 20
+    - name: date
+      weight: 10
+    - name: fragmentrefs
+      type: fragments
+      weight: 10
+      applyFilter: false
+
+
+

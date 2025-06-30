@@ -1,0 +1,20 @@
+
+main:
+  - name: 文档
+    pageRef: posts
+    weight: 10
+  - name: 系列
+    pageRef: series
+    weight: 15
+  - name: 标签
+    pageRef: tags
+    weight: 20
+  - name: 统计
+    pre: arrow-up-right-from-square
+    url: https://cloud.umami.is/share/svT0gpycrq8Lg4tQ/www.raenzo.com
+    weight: 30
+
+footer:
+  - name: 标签
+    pageRef: tags
+    weight: 10

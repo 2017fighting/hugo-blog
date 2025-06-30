@@ -1,0 +1,15 @@
+main:
+  - name: 文档
+    pageRef: posts
+    weight: 10
+  - name: 系列
+    pageRef: series
+    weight: 15
+  - name: 标签
+    pageRef: tags
+    weight: 20
+
+footer:
+  - name: 标签
+    pageRef: tags
+    weight: 10
