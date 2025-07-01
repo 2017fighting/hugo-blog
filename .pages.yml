@@ -1,0 +1,31 @@
+media:
+  input: assets/img
+  output: /img/
+content:
+  - name: posts
+    label: Posts
+    type: collection
+    path: content/posts
+    view:
+      fields: [ title, date, draft ]
+      layout: tree
+    fields:
+      - { name: title, label: 标题, type: string, required: true }
+      - { name: date, label: 发布日期, type: date, options: { time: true, format: "yyyy-MM-dd'T'HH:mm:ss'+08:00'" } }
+      - { name: draft, label: 是否草稿, type: boolean, default: true }
+      - { name: slug, label: Slug, type: string, required: true }
+
+      - { name: categories, label: 分类, type: string, list: true }
+      - { name: tags, label: 标签, type: string, list: true }
+      - { name: series, label: 系列, type: string }
+      - { name: series_order, label: 在系列中的排序, type: number, options: { min: 0 }}
+
+      - { name: summary, label: 摘要（留空自动生成）, type: string }
+      - { name: showComments, label: 是否允许评论, type: boolean, default: true }
+      - { name: body, label: Body, type: rich-text }
+  - name: version
+    label: Version
+    type: file
+    path: version
+    fields:
+      - { name: deployDate, label: 部署日期, type: date, options: { time: true } }

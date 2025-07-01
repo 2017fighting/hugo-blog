@@ -2,6 +2,7 @@
 title: "Test Mermaid"
 date: 2025-06-30T19:28:31+08:00
 draft: false
+summary: ""     
 ---
 
 下面是从[mermaid网站](https://mermaid.nodejs.cn/intro/syntax-reference.html)复制的一些示例，用于检测该博客的mermaid是否能正常渲染各种类型。
